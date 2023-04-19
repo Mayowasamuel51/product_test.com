@@ -31,7 +31,8 @@ function Home() {
                         {abcd => <CategoriesList categories={abcd} />}
                     </Await>
                 </Suspense>
-
+                <br />
+                <br></br>
                 <Suspense fallback={<p className="text-center"><Loadertwo/></p>}>
                     <Await resolve={(products)}>
                         {products_cart => <ProductList products={products_cart} />}
@@ -47,7 +48,7 @@ function Home() {
 export default Home;
 
 async function allProduct() {
-    const response = await fetch('https://dummyjson.com/products?limit=23')
+    const response = await fetch('https://dummyjson.com/products?limit=40')
     if (!response.ok) {
         /// do something if there is an error
     }

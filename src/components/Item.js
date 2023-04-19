@@ -6,14 +6,16 @@ const Item = () => {
     const { items } = useParams();
     const itemlist = items;
     const categoriesloader = useLoaderData()
-    return ( 
+    return (
         <>
-            <div>
-                <h3 className="text-center text-success">u are on   {itemlist } page   </h3>
+            <div className="" style={{ margin:'auto',width: '90%' , }}>
+                <div>
+                    <h3 className="text-center text-success">Currently on  {itemlist} page   </h3>
+                </div>
+                <ProductList products={categoriesloader} />
+
             </div>
-        <ProductList products={categoriesloader}/>
-        
-        
+
         </>
     )
 }
@@ -28,6 +30,6 @@ export async function itemloader({ request, params }) {
     }
     const data = await response.json();
     return data.products
-} 
+}
 
 export default Item;
