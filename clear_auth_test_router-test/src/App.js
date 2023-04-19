@@ -2,7 +2,6 @@ import { createBrowserRouter, RouterProvider } from "react-router-dom";
 import Home, { loader, loaderHome } from './pages/Home'
 import Products from './pages/Products'
 import Navbar from "./components/Navbar";
-import Item, {itemloader} from "./components/Item";
 const router = createBrowserRouter([
   {
     path: '/',
@@ -18,11 +17,6 @@ const router = createBrowserRouter([
         path: '/products',
         element: <Products />,
       },
-      {
-        path: ":items",
-        element: <Item />,
-        loader:itemloader
-      }
 
     ]
   },

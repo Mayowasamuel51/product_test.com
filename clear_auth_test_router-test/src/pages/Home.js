@@ -47,7 +47,7 @@ function Home() {
 export default Home;
 
 async function allProduct() {
-    const response = await fetch('https://dummyjson.com/products?limit=23')
+    const response = await fetch('https://dummyjson.com/products?limit=9')
     if (!response.ok) {
         /// do something if there is an error
     }

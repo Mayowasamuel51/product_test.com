@@ -9,7 +9,7 @@ function ProductList({ products }) {
                 {
                     products.map((item, index) => {
                         return (
-                            <div key={index} className="col-3  d-flex  justify-content-center " style={{ maxWidth: '210px', margin: '12px' }}>
+                            <div key={index} className="col-3  d-flex  justify-content-center " style={{ maxWidth: '210px', margin: '25px' }}>
 
                                 <div className="card mt-3 " style={{ padding: '12px', boxShadow: 'rgba(100, 100, 111, 0.2) 0px 7px 29px 0px' }}>
                                     
